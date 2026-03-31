@@ -11,13 +11,23 @@ Status: **macOS 13.5+**, **Swift 6 toolchain**. Universal binary (arm64 + x86_64
 ## Project status (Archival note)
 I plan to **archive CodMate** after this update. Here is the reasoning that led me to this decision:
 
-- **Key input channels narrowed**: my Claude Code account was recently suspended, which removes a major learning source for CodMate (roughly one third of the original exploration inputs). Keeping the project balanced across tools has become harder.
 - **Scope drift with limited new insight**: CodMate grew from a simple history viewer into a broader desktop GUI for experience, integration, and workflow consolidation. However, it has not pushed the core exploration of Agents/LLMs as much as I hoped.
-- **GUI weight vs. fast‑moving cores**: the underlying Agent/LLM ecosystem evolves quickly. A heavier GUI layer becomes harder to justify when CLI/TUI approaches can iterate faster with less inertia.
+- **Traditional heavyweight GUI is no longer the right center of gravity**: the underlying Agent/LLM ecosystem evolves quickly, and a heavier desktop GUI becomes harder to justify when CLI/TUI approaches can iterate faster with less inertia. What feels more important to me now is a broader **HUI (Human Usability Interface)** direction: designing interfaces that help humans work effectively with rapidly improving AI systems, rather than anchoring exploration to one traditional app surface.
 - **Ecosystem already covers part of the gap**: Codex and Claude Code now offer VS Code/Zed extensions that share history with their CLI sessions, which increasingly addresses the original problem CodMate set out to solve.
-- **Next focus is orchestration, not UI**: I want to invest more in Agent orchestration and CLI‑first experimentation, potentially in a cross‑platform project (e.g., “CLIMate”), and explore open/low‑cost models (Deepseek, Kimi, GLM, etc.) more deeply.
+- **Model exploration now calls for a different center of gravity**: I want to spend more time learning how different model families are best used in practice — not just comparing open or low-cost options, but understanding where each type fits. The community already has strong examples such as `oh-my-openagent`, and there are also emerging Generative UI directions such as A2UI that I want to keep watching and learning from. In a time when AI/LLMs are accelerating what can be created through logic alone, I think the human-facing usability layer is becoming more urgent, not less.
+- **The architecture also boxed the project into macOS**: CodMate’s SwiftUI desktop design helped it move quickly at first, but it also constrained the project to one environment. For the next phase, I want more room for cross-platform orchestration and CLI-first experimentation rather than continuing from a macOS-only foundation.
 
-This does not diminish what CodMate achieved. It reflects a shift in focus to where I believe the highest learning and impact now lie.
+This does not diminish what CodMate achieved. If anything, the recent increase in attention around CodMate makes the tradeoff clearer to me: people are clearly interested in better ways to work with CLI agents, and I still believe interface design around these systems matters deeply. But I no longer think this particular macOS GUI is the best place for me to continue that exploration. The focus shift is toward orchestration, model-specific workflows, HUI, and more portable foundations.
+
+## Where this exploration continues
+
+While I will keep many of the ideas behind CodMate in mind, the project I am actively building now is [MCPMate](https://github.com/loocor/mcpmate).
+
+MCPMate is not a brand-new project. I started shaping it around May last year, paused it around October, and recently returned to it with a clearer view of where MCP has irreplaceable value. It was previously closed-source and is now being reopened in public.
+
+At a high level, MCPMate is a management center for MCP servers and AI clients. The direction I care about most there is usability: building on its earlier profile-based approach for removing redundant capabilities in specific scenarios, and extending its hosted mode toward a more progressively disclosed smart mode. Part of the goal is to bring some of the lower first-token-cost and lower-friction qualities that people appreciated in skills- and CLI-shaped workflows into MCP as well.
+
+So while CodMate is ending here, the broader exploration is not. If CodMate resonated with you, I would love for you to take a look at MCPMate and share feedback.
 
 ## Download
 - **Latest release (DMG)**: [GitHub Releases](https://github.com/loocor/CodMate/releases/latest)
